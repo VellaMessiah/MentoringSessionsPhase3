@@ -1,0 +1,22 @@
+eureka:
+  client:
+    fetch-registry: false
+    register-with-eureka: true
+  dashboard:
+    path: /dashboard
+  instance:
+    hostname: localhost
+server:
+  port: 8759
+spring:
+  application:
+    name: SCHOOLSTUDENT-WS
+  datasource:
+    password: root
+    url: jdbc:h2:mem:testdb
+    username: root
+  h2:
+    console:
+      enabled: true
+      settings:
+        web-allow-others: true
